@@ -44,6 +44,12 @@ public class foxtest extends BaseTest {
             
     	  foxPage=new foxPage();
     	  foxPage.click_Mypto_link();
+    	  foxPage.click_PTORequest_Tab();
+    	  foxPage.click_AddPTORequest_button ();
+    	  foxPage.entertext_PTORequest_Dates(mainTabs.get("TestData1"));
+    	  foxPage.click_Apply_button();
+    	  /*List<String> mydata=foxPage.list_ptorequesttype_dropdownvalues();
+    	  System.out.println(mydata);*/
     	  
            
             

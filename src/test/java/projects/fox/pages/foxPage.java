@@ -10,11 +10,13 @@ import com.baseproject.utility.BasePage;
 public class foxPage extends BasePage {
       
       //Locators Webelement
-      
-      /*@FindBy(partialLinkText = "Manage Offices") WebElement click_Manage_Office_link;
-      @FindBy(xpath = "/html/body/div/form/table[2]/tbody/tr/td/div/strong") List<WebElement> list_Manage_Office_section_list;*/
-
-             @FindBy(xpath = "//*[@id='mainNavPTO']/a") WebElement click_Mypto_link;
+      @FindBy(xpath = "//*[@id='mainNavPTO']/a") WebElement click_Mypto_link;
+      @FindBy(id = "nav-one") WebElement click_PTORequest_Tab;
+      @FindBy(id="btnPTORequest") WebElement click_AddPTORequest_button;
+      @FindBy(id="dtFromToDate") WebElement entertext_PTORequest_Dates;
+      @FindBy(xpath = "//div[2]/div[3]/div/button[1]") WebElement click_Apply_button;
+      @FindBy(xpath = "//ul[@id='select2-results-22']//span")  WebElement list_ptorequesttype_dropdownvalues;
+    
       
 	 
 	 //Constructor
@@ -31,34 +33,36 @@ public class foxPage extends BasePage {
                  executor.executeScript("arguments[0].click();", click_Mypto_link);
           }
             
-/*            public void click_cancel()
-            {
-                  JavascriptExecutor executor = (JavascriptExecutor)driver;
-                  executor.executeScript("arguments[0].click();", click_cancel);
-            }
+            public void click_PTORequest_Tab() {
+                
+            	 JavascriptExecutor executor = (JavascriptExecutor)driver;
+                 executor.executeScript("arguments[0].click();", click_PTORequest_Tab);
+          }
             
-            public String gettext_click_cancel()
-              {
-                    return click_cancel.getAttribute("value");
-              }
-            public String gettext__ManageOffice_page()
-              {
-                  return getText("gettext__ManageOffice_page",  gettext__ManageOffice_page);
-              }
+            public void click_AddPTORequest_button () {
+                
+           	 JavascriptExecutor executor = (JavascriptExecutor)driver;
+                executor.executeScript("arguments[0].click();", click_AddPTORequest_button);
+         }
+            
+            public void entertext_PTORequest_Dates(String text) {
+                
+            	enterText("entertext_PTORequest_Dates", entertext_PTORequest_Dates, text);
+         }
+            
+            public void  click_Apply_button() {
+                
+           	 JavascriptExecutor executor = (JavascriptExecutor)driver;
+                executor.executeScript("arguments[0].click();", click_Apply_button);
+         }
+            
+            
+            public List<String> list_ptorequesttype_dropdownvalues() {
+                
+                 return getAllOptionsFromDropDown("list_ptorequesttype_dropdownvalues", list_ptorequesttype_dropdownvalues);
+          }
+            
 
-            public List<String> list_columnname_withoutdata_Users() {
-                  
-                  return getTextFromAllElements("list_columnname_withoutdata_Users", list_columnname_withoutdata_Users);
-            }
-            
-        public void entertext_addnewoffice(String OptionText){
-                  enterText("entertext_addprogramname", entertext_addnewoffice,OptionText );
-            }
-        
-        public void dropdown_type(String OptionText) {
-                  
-            selectDropDownByValue("list_dropdown_type", dropdown_type,OptionText );
-            }*/
         
     
             

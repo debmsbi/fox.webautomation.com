@@ -4,6 +4,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import com.baseproject.utility.BasePage;
 
+
+
 public class foxLoginPage extends BasePage{
       
 	  @FindBy(id = "txtCorpID") WebElement legacycompany;
