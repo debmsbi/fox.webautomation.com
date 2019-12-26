@@ -28,12 +28,12 @@ public class foxtest extends BaseTest {
             
     	  //WIth config file
     	  
-    	Company= getPropertyValue("company1");
-        User = getPropertyValue("user1");
-        Pass = getPropertyValue("pass1");
+    	Company= getPropertyValue("company");
+        User = getPropertyValue("user");
+        Pass = getPropertyValue("pass");
          
         foxloginPage= new foxLoginPage();
-        foxloginPage.openLoginPage(getURL("URL1"));
+        foxloginPage.openLoginPage(getURL("URL"));
         foxloginPage.LoginfoxApplication(Company,User, Pass);
     	  	  
             
@@ -48,8 +48,10 @@ public class foxtest extends BaseTest {
     	  foxPage.click_AddPTORequest_button ();
     	  foxPage.entertext_PTORequest_Dates(mainTabs.get("TestData1"));
     	  foxPage.click_Apply_button();
-    	  /*List<String> mydata=foxPage.list_ptorequesttype_dropdownvalues();
-    	  System.out.println(mydata);*/
+    	  foxPage.click_dropdown_ptorequesttype();
+    	  foxPage.entertext_ptorequesttype(mainTabs.get("TestData2"));
+    	  foxPage.click_dropdown_ptorequesttype_sick();
+    	  foxPage.click_submit_button();
     	  
            
             

@@ -14,8 +14,11 @@ public class foxPage extends BasePage {
       @FindBy(id = "nav-one") WebElement click_PTORequest_Tab;
       @FindBy(id="btnPTORequest") WebElement click_AddPTORequest_button;
       @FindBy(id="dtFromToDate") WebElement entertext_PTORequest_Dates;
-      @FindBy(xpath = "//div[2]/div[3]/div/button[1]") WebElement click_Apply_button;
-      @FindBy(xpath = "//ul[@id='select2-results-22']//span")  WebElement list_ptorequesttype_dropdownvalues;
+      @FindBy(xpath = "//*[contains(text(),'Apply')]") WebElement click_Apply_button;
+      @FindBy(xpath = "//*[@id='s2id_dropPTOType']/a/span[2]/b")  WebElement click_dropdown_ptorequesttype;
+      @FindBy(id = "s2id_autogen4_search") WebElement entertext_ptorequesttype;
+      @FindBy(xpath = "//*[@id='select2-results-4']/li/div/span")  WebElement click_dropdown_ptorequesttype_sick;
+      @FindBy(id = "btnSubmit") WebElement click_submit_button;
     
       
 	 
@@ -51,18 +54,31 @@ public class foxPage extends BasePage {
          }
             
             public void  click_Apply_button() {
+            	
+            	clickOnElement("click_Apply_button", click_Apply_button );
                 
-           	 JavascriptExecutor executor = (JavascriptExecutor)driver;
-                executor.executeScript("arguments[0].click();", click_Apply_button);
          }
             
+            public void  click_dropdown_ptorequesttype() {
+            	
+            	clickOnElement("click_dropdown_ptorequesttype", click_dropdown_ptorequesttype );
+         }
             
-            public List<String> list_ptorequesttype_dropdownvalues() {
+            public void  entertext_ptorequesttype(String text) {
                 
-                 return getAllOptionsFromDropDown("list_ptorequesttype_dropdownvalues", list_ptorequesttype_dropdownvalues);
-          }
-            
+            	enterText("entertext_ptorequesttype", entertext_ptorequesttype, text);
+         }
+           
+            public void  click_dropdown_ptorequesttype_sick() {
+            	
+            	clickOnElement("click_dropdown_ptorequesttype_sick", click_dropdown_ptorequesttype_sick );
+         }
 
+            
+            public void  click_submit_button() {
+            	
+            	clickOnElement("click_submit_button", click_submit_button );
+         }
         
     
             

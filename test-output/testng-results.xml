@@ -26,26 +26,41 @@
       <![CDATA[Enter text [12/25/2019 - 12/25/2019] in the [entertext_PTORequest_Dates] Text Box<br />]]>
     </line>
     <line>
+      <![CDATA[Click on [click_Apply_button]<br />]]>
+    </line>
+    <line>
+      <![CDATA[Click on [click_dropdown_ptorequesttype]<br />]]>
+    </line>
+    <line>
+      <![CDATA[Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br />]]>
+    </line>
+    <line>
+      <![CDATA[Click on [click_dropdown_ptorequesttype_sick]<br />]]>
+    </line>
+    <line>
+      <![CDATA[Click on [click_submit_button]<br />]]>
+    </line>
+    <line>
       <![CDATA[-----------Test Method [test1] Execution Complete-------------<br />]]>
     </line>
     <line>
       <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43333" started-at="2019-12-24T01:17:34 IST" finished-at="2019-12-24T01:18:18 IST">
+  <suite name="Default suite" duration-ms="127839" started-at="2019-12-27T02:09:30 IST" finished-at="2019-12-27T02:11:38 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43333" started-at="2019-12-24T01:17:34 IST" finished-at="2019-12-24T01:18:18 IST">
+    <test name="Default test" duration-ms="127839" started-at="2019-12-27T02:09:30 IST" finished-at="2019-12-27T02:11:38 IST">
       <class name="projects.fox.tests.foxtest">
-        <test-method status="PASS" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@687080dc]" name="preinit" is-config="true" duration-ms="563" started-at="2019-12-24T01:17:34 IST" finished-at="2019-12-24T01:17:34 IST">
+        <test-method status="PASS" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@385e9564]" name="preinit" is-config="true" duration-ms="656" started-at="2019-12-27T02:09:29 IST" finished-at="2019-12-27T02:09:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preinit -->
-        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@687080dc]" name="init" is-config="true" duration-ms="7434" started-at="2019-12-24T01:17:34 IST" finished-at="2019-12-24T01:17:42 IST">
+        <test-method status="PASS" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@385e9564]" name="init" is-config="true" duration-ms="8716" started-at="2019-12-27T02:09:30 IST" finished-at="2019-12-27T02:09:39 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6bfdb014]]>
+                <![CDATA[org.testng.TestRunner@24386839]]>
               </value>
             </param>
           </params>
@@ -55,7 +70,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="test()[pri:0, instance:projects.fox.tests.foxtest@687080dc]" name="test" is-config="true" duration-ms="21663" started-at="2019-12-24T01:17:42 IST" finished-at="2019-12-24T01:18:03 IST">
+        <test-method status="PASS" signature="test()[pri:0, instance:projects.fox.tests.foxtest@385e9564]" name="test" is-config="true" duration-ms="22354" started-at="2019-12-27T02:09:39 IST" finished-at="2019-12-27T02:10:01 IST">
           <reporter-output>
             <line>
               <![CDATA[Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br />]]>
@@ -74,7 +89,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@687080dc]" name="extent" is-config="true" duration-ms="29" started-at="2019-12-24T01:18:04 IST" finished-at="2019-12-24T01:18:04 IST">
+        <test-method status="PASS" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@385e9564]" name="extent" is-config="true" duration-ms="31" started-at="2019-12-27T02:10:02 IST" finished-at="2019-12-27T02:10:02 IST">
           <params>
             <param index="0">
               <value>
@@ -88,11 +103,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method status="PASS" signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@687080dc]" name="test1" duration-ms="9727" started-at="2019-12-24T01:18:04 IST" description="Demaut_1" data-provider="ExcelTestData" finished-at="2019-12-24T01:18:14 IST">
+        <test-method status="PASS" signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@385e9564]" name="test1" duration-ms="92183" started-at="2019-12-27T02:10:02 IST" description="Demaut_1" data-provider="ExcelTestData" finished-at="2019-12-27T02:11:34 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TestData1=12/25/2019 - 12/25/2019, TestName=test1}]]>
+                <![CDATA[{TestData2=Sick, TestData1=12/25/2019 - 12/25/2019, TestName=test1}]]>
               </value>
             </param>
           </params>
@@ -100,13 +115,28 @@
             <line>
               <![CDATA[Enter text [12/25/2019 - 12/25/2019] in the [entertext_PTORequest_Dates] Text Box<br />]]>
             </line>
+            <line>
+              <![CDATA[Click on [click_Apply_button]<br />]]>
+            </line>
+            <line>
+              <![CDATA[Click on [click_dropdown_ptorequesttype]<br />]]>
+            </line>
+            <line>
+              <![CDATA[Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br />]]>
+            </line>
+            <line>
+              <![CDATA[Click on [click_dropdown_ptorequesttype_sick]<br />]]>
+            </line>
+            <line>
+              <![CDATA[Click on [click_submit_button]<br />]]>
+            </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@687080dc]" name="getResult" is-config="true" duration-ms="33" started-at="2019-12-24T01:18:14 IST" finished-at="2019-12-24T01:18:14 IST">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@385e9564]" name="getResult" is-config="true" duration-ms="49" started-at="2019-12-27T02:11:34 IST" finished-at="2019-12-27T02:11:34 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@687080dc] output=Enter text [12/25/2019 - 12/25/2019] in the [entertext_PTORequest_Dates] Text Box<br />]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@385e9564] output=Enter text [12/25/2019 - 12/25/2019] in the [entertext_PTORequest_Dates] Text Box<br />]]]>
               </value>
             </param>
             <param index="1">
@@ -121,7 +151,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@687080dc]" name="tearDown" is-config="true" duration-ms="3965" started-at="2019-12-24T01:18:14 IST" finished-at="2019-12-24T01:18:18 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@385e9564]" name="tearDown" is-config="true" duration-ms="3934" started-at="2019-12-27T02:11:34 IST" finished-at="2019-12-27T02:11:38 IST">
           <reporter-output>
             <line>
               <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
