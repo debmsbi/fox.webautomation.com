@@ -18,7 +18,9 @@ public class foxPage extends BasePage {
       @FindBy(xpath = "//*[@id='s2id_dropPTOType']/a/span[2]/b")  WebElement click_dropdown_ptorequesttype;
       @FindBy(id = "s2id_autogen4_search") WebElement entertext_ptorequesttype;
       @FindBy(xpath = "//*[@id='select2-results-4']/li/div/span")  WebElement click_dropdown_ptorequesttype_sick;
+      @FindBy(xpath = "//input[@id='txtHours']")  WebElement entertext_Totalhours;
       @FindBy(id = "btnSubmit") WebElement click_submit_button;
+      @FindBy(xpath = "//*[@id='TableMyPTO']//tr[1]/td")  List<WebElement> List_ptohistort_records;
     
       
 	 
@@ -48,6 +50,10 @@ public class foxPage extends BasePage {
                 executor.executeScript("arguments[0].click();", click_AddPTORequest_button);
          }
             
+            public void entertext_Totalhours(String text) {
+                
+            	enterText("entertext_Totalhours", entertext_Totalhours, text);
+         }
             public void entertext_PTORequest_Dates(String text) {
                 
             	enterText("entertext_PTORequest_Dates", entertext_PTORequest_Dates, text);
@@ -80,6 +86,12 @@ public class foxPage extends BasePage {
             	clickOnElement("click_submit_button", click_submit_button );
          }
         
+            
+            
+         public List<String> List_ptohistort_records() {
+                
+                return getTextFromAllElements("List_ptohistort_records", List_ptohistort_records);
+          }
     
             
         
