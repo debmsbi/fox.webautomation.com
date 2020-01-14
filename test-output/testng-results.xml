@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Exception occurred at init()  <br />]]>
@@ -95,20 +95,20 @@
       <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-01-14T20:40:15 IST" name="Default suite" finished-at="2020-01-14T20:40:38 IST" duration-ms="23131">
+  <suite started-at="2020-01-14T22:18:17 IST" name="Default suite" finished-at="2020-01-14T22:18:56 IST" duration-ms="38956">
     <groups>
     </groups>
-    <test started-at="2020-01-14T20:40:15 IST" name="Default test" finished-at="2020-01-14T20:40:38 IST" duration-ms="23131">
+    <test started-at="2020-01-14T22:18:17 IST" name="Default test" finished-at="2020-01-14T22:18:56 IST" duration-ms="38956">
       <class name="projects.fox.tests.foxtest">
-        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@1e6454ec]" started-at="2020-01-14T20:40:14 IST" name="preinit" finished-at="2020-01-14T20:40:15 IST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@70e8f8e]" started-at="2020-01-14T22:18:16 IST" name="preinit" finished-at="2020-01-14T22:18:17 IST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preinit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@1e6454ec]" started-at="2020-01-14T20:40:15 IST" name="init" finished-at="2020-01-14T20:40:18 IST" duration-ms="3680" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@70e8f8e]" started-at="2020-01-14T22:18:17 IST" name="init" finished-at="2020-01-14T22:18:24 IST" duration-ms="7163" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3f183caa]]>
+                <![CDATA[org.testng.TestRunner@66273da0]]>
               </value>
             </param>
           </params>
@@ -118,7 +118,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="test()[pri:0, instance:projects.fox.tests.foxtest@1e6454ec]" started-at="2020-01-14T20:40:18 IST" name="test" finished-at="2020-01-14T20:40:26 IST" duration-ms="7347" status="PASS">
+        <test-method is-config="true" signature="test()[pri:0, instance:projects.fox.tests.foxtest@70e8f8e]" started-at="2020-01-14T22:18:24 IST" name="test" finished-at="2020-01-14T22:18:37 IST" duration-ms="13386" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br />]]>
@@ -137,7 +137,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@1e6454ec]" started-at="2020-01-14T20:40:26 IST" name="extent" finished-at="2020-01-14T20:40:26 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@70e8f8e]" started-at="2020-01-14T22:18:37 IST" name="extent" finished-at="2020-01-14T22:18:37 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,7 +151,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@1e6454ec]" started-at="2020-01-14T20:40:26 IST" name="test1" description="Demaut_1" data-provider="ExcelTestData" finished-at="2020-01-14T20:40:35 IST" duration-ms="8829" status="PASS">
+        <test-method signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@70e8f8e]" started-at="2020-01-14T22:18:37 IST" name="test1" description="EPAY_1" data-provider="ExcelTestData" finished-at="2020-01-14T22:18:50 IST" duration-ms="12430" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -228,11 +228,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@1e6454ec]" started-at="2020-01-14T20:40:35 IST" name="getResult" finished-at="2020-01-14T20:40:35 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@70e8f8e]" started-at="2020-01-14T22:18:50 IST" name="getResult" finished-at="2020-01-14T22:18:50 IST" duration-ms="15" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@1e6454ec] output=Enter text [01/15/2020 - 01/15/2020] in the [entertext_PTORequest_Dates] Text Box<br />]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@70e8f8e] output=Enter text [01/15/2020 - 01/15/2020] in the [entertext_PTORequest_Dates] Text Box<br />]]]>
               </value>
             </param>
             <param index="1">
@@ -247,7 +247,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@1e6454ec]" started-at="2020-01-14T20:40:35 IST" name="tearDown" finished-at="2020-01-14T20:40:38 IST" duration-ms="3150" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@70e8f8e]" started-at="2020-01-14T22:18:50 IST" name="tearDown" finished-at="2020-01-14T22:18:56 IST" duration-ms="5703" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>

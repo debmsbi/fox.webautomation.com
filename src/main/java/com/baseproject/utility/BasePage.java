@@ -38,7 +38,7 @@ import com.baseproject.webdriver.WebDriverFactory;
 /**
 * This class contains generic Page functions and extends WebDriverFactory class
 *
-* @author U1196286
+* @author 10647421
 */
 public class BasePage extends WebDriverFactory {
 

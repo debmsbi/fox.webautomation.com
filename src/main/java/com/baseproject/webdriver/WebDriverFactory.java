@@ -19,7 +19,7 @@ import com.baseproject.global.Config;
 /**
 * This class contains generic WebDriver utility functions
 *
-* @author U1196286
+* @author 10647421
 */
 public class WebDriverFactory extends Config {
 

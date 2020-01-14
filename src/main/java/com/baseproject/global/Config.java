@@ -50,7 +50,7 @@ import com.codoid.products.fillo.Recordset;
 import com.baseproject.utility.Log;
 
 /**
-* @author U1196286 The Config class contains <br>
+* @author 10647421 The Config class contains <br>
 *         Global variables <br>
 *         Config functions </br>
 */
