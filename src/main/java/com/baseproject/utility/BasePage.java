@@ -326,6 +326,26 @@ public class BasePage extends WebDriverFactory {
                   throw e;
             }
       }
+      
+      /**
+       * This function is to click on a particular WebElement via Java script executor
+       * 
+        * @param description Description for the logger
+       * @param element     WebElement
+       * 
+        */
+      protected static synchronized void clickOnElementjse(String description, WebElement element) {
+    	  
+    	  Log.info("Click on [" + description + "]");
+          try {
+      JavascriptExecutor executor = (JavascriptExecutor)driver;
+      executor.executeScript("arguments[0].click();", element);
+          } catch (Exception e) {
+              Log.error("Unable to click on [" + description + "]", e);
+              screenshot("Failure");
+              throw e;
+        }
+  }
 
       /**
       * This function is to clear the field and then enters the text in the field

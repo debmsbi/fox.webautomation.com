@@ -34,20 +34,20 @@ public class foxPage extends BasePage {
             
             public void click_Mypto_link() {
                 
-            	 JavascriptExecutor executor = (JavascriptExecutor)driver;
-                 executor.executeScript("arguments[0].click();", click_Mypto_link);
+            	clickOnElement("click_Apply_button", click_Mypto_link );
+            	
           }
             
             public void click_PTORequest_Tab() {
                 
-            	 JavascriptExecutor executor = (JavascriptExecutor)driver;
-                 executor.executeScript("arguments[0].click();", click_PTORequest_Tab);
+            	clickOnElement("click_Apply_button", click_PTORequest_Tab );
           }
             
             public void click_AddPTORequest_button () {
                 
-           	 JavascriptExecutor executor = (JavascriptExecutor)driver;
-                executor.executeScript("arguments[0].click();", click_AddPTORequest_button);
+           	 /*JavascriptExecutor executor = (JavascriptExecutor)driver;
+                executor.executeScript("arguments[0].click();", click_AddPTORequest_button);*/
+            	clickOnElement("click_Apply_button", click_AddPTORequest_button );
          }
             
             public void entertext_Totalhours(String text) {

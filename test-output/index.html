@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="projects.fox.tests.foxtest" class="method navigator-link" hash-for-method="test1({TestData8=1, TestData7=8, TestData6=01/16/2020, TestData5=01/16/2020, TestData4=9608.70 - Police De...)">test1({TestData8=1, TestData7=8, TestData6=01/16/2020, TestData5=01/16/2020, TestData4=9608.70 - Police De...)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="projects.fox.tests.foxtest" class="method navigator-link" hash-for-method="test1({TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police De...)">test1({TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police De...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,30 +117,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">projects.fox.tests.foxtest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test1({TestData8=1, TestData7=8, TestData6=01/16/2020, TestData5=01/16/2020, TestData4=9608.70 - Police De...)">
-                  </a> <!-- test1({TestData8=1, TestData7=8, TestData6=01/16/2020, TestData5=01/16/2020, TestData4=9608.70 - Police De...) -->
+                  <a name="test1({TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police De...)">
+                  </a> <!-- test1({TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police De...) -->
                   <span class="method-name">test1</span>
-                  <span class="parameters">({TestData8=1, TestData7=8, TestData6=01/16/2020, TestData5=01/16/2020, TestData4=9608.70 - Police Department - Studio: Guards-001, TestData3=8, TestData2=Sick, TestName=test1, TestData1=01/16/2020 - 01/16/2020, TestData10=Awaiting Approval, TestData9=Sick})</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [01/16/2020] but found [01/21/2020]
-	at com.baseproject.base.BaseTest.assertEquals(BaseTest.java:260)
-	at projects.fox.tests.foxtest.test1(foxtest.java:61)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">({TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police Department - Studio: Guards-001, TestData3=8, TestData2=Sick, TestName=test1, TestData1=01/22/2020 - 01/22/2020, TestData10=Awaiting Approval, TestData9=Sick})</span>
                   <em>
 (EPAY_1)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -197,12 +191,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'projects.fox.tests.foxtest')
-data.setCell(0, 3, 9561);
+data.setCell(0, 3, 11509);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -214,9 +208,12 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">test1({TestData8=1, TestData7=8, TestData6=01/16/2020, TestData5=01/16/2020, TestData4=9608.70 - Police De...)</span>
+              <span class="reporter-method-name">test1({TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police De...)</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Enter text [01/16/2020 - 01/16/2020] in the [entertext_PTORequest_Dates] Text Box<br /></span>
+                <span class="reporter-method-output">Click on [click_Apply_button]<br /></span>
+                <span class="reporter-method-output">Click on [click_Apply_button]<br /></span>
+                <span class="reporter-method-output">Click on [click_Apply_button]<br /></span>
+                <span class="reporter-method-output">Enter text [01/22/2020 - 01/22/2020] in the [entertext_PTORequest_Dates] Text Box<br /></span>
                 <span class="reporter-method-output">Click on [click_Apply_button]<br /></span>
                 <span class="reporter-method-output">Click on [click_dropdown_ptorequesttype]<br /></span>
                 <span class="reporter-method-output">Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br /></span>
@@ -227,7 +224,17 @@ return data;
                 <span class="reporter-method-output">[assertEquals]: verify Location<br /></span>
                 <span class="reporter-method-output">[assertEquals]: Expected [9608.70 - Police Department - Studio: Guards-001] Actual [9608.70 - Police Department - Studio: Guards-001]<br /></span>
                 <span class="reporter-method-output">[assertEquals]: verify Start Date<br /></span>
-                <span class="reporter-method-output">Assertion failed: expected [01/16/2020] but found [01/21/2020]<br /></span>
+                <span class="reporter-method-output">[assertEquals]: Expected [01/22/2020] Actual [01/22/2020]<br /></span>
+                <span class="reporter-method-output">[assertEquals]: verify End Date<br /></span>
+                <span class="reporter-method-output">[assertEquals]: Expected [01/22/2020] Actual [01/22/2020]<br /></span>
+                <span class="reporter-method-output">[assertEquals]: verify Hours<br /></span>
+                <span class="reporter-method-output">[assertEquals]: Expected [8] Actual [8]<br /></span>
+                <span class="reporter-method-output">[assertEquals]: verify Days<br /></span>
+                <span class="reporter-method-output">[assertEquals]: Expected [1] Actual [1]<br /></span>
+                <span class="reporter-method-output">[assertEquals]: verify Type<br /></span>
+                <span class="reporter-method-output">[assertEquals]: Expected [Sick] Actual [Sick]<br /></span>
+                <span class="reporter-method-output">[assertEquals]: Verify Status<br /></span>
+                <span class="reporter-method-output">[assertEquals]: Expected [Awaiting Approval] Actual [Awaiting Approval]<br /></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -251,30 +258,28 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">init(org.testng.TestRunner@2538bc06)</span>
-                <span class="method-start">169 ms</span>
+                <span class="method-name">init(org.testng.TestRunner@5478ce1e)</span>
+                <span class="method-start">172 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">test</span>
-                <span class="method-start">3820 ms</span>
+                <span class="method-start">3952 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">extent(public void projects.fox.tests.foxtest.test1(java.util.Hashtable) throws java.lang.InterruptedExcept...)</span>
-                <span class="method-start">21436 ms</span>
+                <span class="method-start">22774 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">test1({TestData8=1, TestData7=8, TestData6=01/16/2020, TestData5=01/16/2020, TestData4=9608.70 - Police De...)</span>
-                <span class="method-start">21440 ms</span>
+                <span class="method-name">test1({TestData8=1, TestData7=8, TestData6=01/22/2020, TestData5=01/22/2020, TestData4=9608.70 - Police De...)</span>
+                <span class="method-start">22777 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=test1 status=FAILURE method=foxtest.test1(java.util.Hashtable)[pri:0, instance:proj...)</span>
-                <span class="method-start">31005 ms</span>
+                <span class="method-name">getResult([TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:proj...)</span>
+                <span class="method-start">34289 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">31529 ms</span>
+                <span class="method-start">34301 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

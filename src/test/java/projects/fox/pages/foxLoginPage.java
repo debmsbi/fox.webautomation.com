@@ -8,10 +8,10 @@ import com.baseproject.utility.BasePage;
 
 public class foxLoginPage extends BasePage{
       
-	  @FindBy(id = "txtCorpID") WebElement legacycompany;
-      @FindBy(id = "txtLoginID") WebElement legacyUsername;
-      @FindBy(name = "txtPassword") WebElement legacyPassword;
-      @FindBy(name = "btnLogin") WebElement legacyLogin;
+	  @FindBy(id = "txtCorpID") WebElement company;
+      @FindBy(id = "txtLoginID") WebElement Username;
+      @FindBy(name = "txtPassword") WebElement Password;
+      @FindBy(name = "btnLogin") WebElement Login;
      
       
       
@@ -35,32 +35,32 @@ public class foxLoginPage extends BasePage{
       
      public void LoginfoxApplication(String company,String username,String password){
          
-	     enterLegacyCompany(company);
-         enterLegacyUsername(username);
-         enterLegacyPassword(password);
-         clickOnLegacyLogin();
+	     enterCompany(company);
+         enterUsername(username);
+         enterPassword(password);
+         clickOnLogin();
          
    }
      
-     private void enterLegacyCompany(String optionText) {
-         System.out.println("i am inside");
-         enterText("Company", legacycompany, optionText);
+     private void enterCompany(String optionText) {
+    	 clickOnElement("Company", company);
+         enterText("Company", company, optionText);
    }
       
-      private void enterLegacyUsername(String optionText) {
-            System.out.println("i am inside");
-            enterText("User Name", legacyUsername, optionText);
+      private void enterUsername(String optionText) {
+    	  clickOnElement("User Name", Username);
+            enterText("User Name", Username, optionText);
       }
       
       
-      private void enterLegacyPassword(String optionText) {
-    	  System.out.println("i am inside");
-            enterText("Password", legacyPassword, optionText);
+      private void enterPassword(String optionText) {
+    	  clickOnElement("Password", Password);
+            enterText("Password", Password, optionText);
       }
       
       
-      private void clickOnLegacyLogin() {
-            clickOnElement("Submit", legacyLogin);
+      private void clickOnLogin() {
+            clickOnElement("Submit", Login);
       }
       
       
