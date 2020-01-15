@@ -57,13 +57,13 @@ public class foxtest extends BaseTest {
     	  Thread.sleep(3000);
     	  List<String> myData = foxPage.List_ptohistort_records();
     	  System.out.println(myData);
-          assertEquals(myData.get(0),mainTabs.get("TestData4"),"get0");
-          assertEquals(myData.get(1),mainTabs.get("TestData5"),"get1");
-          assertEquals(myData.get(2),mainTabs.get("TestData6"),"get2");
-          assertEquals(myData.get(3),mainTabs.get("TestData7"),"get3");
-          assertEquals(myData.get(4),mainTabs.get("TestData8"),"get3");
-          assertEquals(myData.get(5),mainTabs.get("TestData9"),"get3");
-          assertEquals(myData.get(6),mainTabs.get("TestData10"),"get3");
+          assertEquals(myData.get(0),mainTabs.get("TestData4"),"verify Location");
+          assertEquals(myData.get(1),mainTabs.get("TestData5"),"verify Start Date");
+          assertEquals(myData.get(2),mainTabs.get("TestData6"),"verify End Date");
+          assertEquals(myData.get(3),mainTabs.get("TestData7"),"verify Hours");
+          assertEquals(myData.get(4),mainTabs.get("TestData8"),"verify Days");
+          assertEquals(myData.get(5),mainTabs.get("TestData9"),"verify Type");
+          assertEquals(myData.get(6),mainTabs.get("TestData10"),"Verify Status");
     	  
            
             
