@@ -83,16 +83,16 @@
       <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-01-30T00:37:22 IST" name="Suite" finished-at="2020-01-30T00:38:03 IST" duration-ms="41982">
+  <suite started-at="2020-02-03T18:12:49 IST" name="Suite" finished-at="2020-02-03T18:13:52 IST" duration-ms="62355">
     <groups>
     </groups>
-    <test started-at="2020-01-30T00:37:22 IST" name="Test" finished-at="2020-01-30T00:38:03 IST" duration-ms="41982">
+    <test started-at="2020-02-03T18:12:49 IST" name="Test" finished-at="2020-02-03T18:13:52 IST" duration-ms="62355">
       <class name="projects.fox.tests.foxtest">
-        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-01-30T00:37:21 IST" name="preinit" finished-at="2020-01-30T00:37:22 IST" duration-ms="151" status="PASS">
+        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-02-03T18:12:49 IST" name="preinit" finished-at="2020-02-03T18:12:49 IST" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preinit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-01-30T00:37:22 IST" name="init" finished-at="2020-01-30T00:37:25 IST" duration-ms="3934" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-02-03T18:12:49 IST" name="init" finished-at="2020-02-03T18:12:54 IST" duration-ms="4359" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="test()[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-01-30T00:37:25 IST" name="test" finished-at="2020-01-30T00:37:46 IST" duration-ms="20948" status="PASS">
+        <test-method is-config="true" signature="test()[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-02-03T18:12:54 IST" name="test" finished-at="2020-02-03T18:13:31 IST" duration-ms="37700" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br />]]>
@@ -134,7 +134,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-01-30T00:37:47 IST" name="extent" finished-at="2020-01-30T00:37:47 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-02-03T18:13:32 IST" name="extent" finished-at="2020-02-03T18:13:32 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -148,7 +148,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-01-30T00:37:47 IST" name="test1" description="EPAY_1" data-provider="ExcelTestData" finished-at="2020-01-30T00:37:59 IST" duration-ms="12619" status="FAIL">
+        <test-method signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-02-03T18:13:32 IST" name="test1" description="EPAY_1" data-provider="ExcelTestData" finished-at="2020-02-03T18:13:47 IST" duration-ms="15679" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -247,7 +247,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-01-30T00:37:59 IST" name="getResult" finished-at="2020-01-30T00:38:00 IST" duration-ms="655" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-02-03T18:13:47 IST" name="getResult" finished-at="2020-02-03T18:13:48 IST" duration-ms="703" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -266,7 +266,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-01-30T00:38:00 IST" name="tearDown" finished-at="2020-01-30T00:38:03 IST" duration-ms="3558" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@483f6d77]" started-at="2020-02-03T18:13:48 IST" name="tearDown" finished-at="2020-02-03T18:13:52 IST" duration-ms="3644" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
