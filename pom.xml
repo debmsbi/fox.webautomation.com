@@ -1,57 +1,27 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>fox.webautomation.com</groupId>
-    <artifactId>fox.webautomation.com</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <name>fox.webautomation.com</name>
-    <description>fox webautomation</description>
-    
-    <dependencies>
-    
-    <!-- Rest Assured for Rest API testing dependency -->
-    <dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>java-hamcrest</artifactId>
-			<version>2.0.0.0</version>
-			<scope>test</scope>
-		</dependency> 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fox.webautomation.com</groupId>
+	<artifactId>fox.webautomation.com</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>fox.webautomation.com</name>
+	<description>fox webautomation</description>
+
+	<dependencies>
+
+		<!-- Rest Assured for Rest API testing dependency -->
+
 		<dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest-core</artifactId>
-			<version>2.2</version>
-			<scope>test</scope>
-		</dependency> 
-		<dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest-library</artifactId>
-			<version>2.2</version>
-			<scope>test</scope>
-		</dependency> 
-<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>4.1.2</version>
-			<scope>test</scope>
-		</dependency> 
-<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>json-schema-validator</artifactId>
-			<version>4.1.2</version>
-		</dependency> 
-<dependency>
-			<groupId>com.jayway.jsonpath</groupId>
-			<artifactId>json-path</artifactId>
-			<version>2.4.0</version>
-		</dependency> 
-        <dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>xml-path</artifactId>
-			<version>4.1.2</version>
-		</dependency> 
-		
-		
- <!-- Web Application testing Dependency -->		
-		
+		</dependency>
+
+
+
+		<!-- Web Application testing Dependency -->
+
 		<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
 		<dependency>
 			<groupId>org.apache.pdfbox</groupId>
@@ -162,8 +132,8 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
-	
+
+
 
 	<build>
 		<sourceDirectory>src/main/java</sourceDirectory>
@@ -185,10 +155,10 @@
 				<directory>src/test/resources</directory>
 			</testResource>
 		</testResources>
-		
+
 		<directory>target</directory>
 		<finalName>webautomation-1.4-SNAPSHOT</finalName>
-		
+
 		<pluginManagement>
 			<plugins>
 				<plugin>
@@ -400,8 +370,8 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	
+
+
 	<reporting>
 		<plugins>
 			<plugin>
@@ -428,8 +398,8 @@
 			</plugin>
 		</plugins>
 	</reporting>
-	
-	
+
+
 </project>
 		
 		
