@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.openqa.selenium.JavascriptExecutor;
@@ -33,7 +32,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
-
 import com.baseproject.webdriver.WebDriverFactory;
 
 /**
@@ -321,26 +319,6 @@ public class BasePage extends WebDriverFactory {
 		Log.info("Click on [" + description + "]");
 		try {
 			element.click();
-		} catch (Exception e) {
-			Log.error("Unable to click on [" + description + "]", e);
-			screenshot("Failure");
-			throw e;
-		}
-	}
-
-	/**
-	 * This function is to click on a particular WebElement via Java script executor
-	 * 
-	 * @param description Description for the logger
-	 * @param element     WebElement
-	 * 
-	 */
-	protected static synchronized void clickOnElementjse(String description, WebElement element) {
-
-		Log.info("Click on [" + description + "]");
-		try {
-			JavascriptExecutor executor = (JavascriptExecutor) driver;
-			executor.executeScript("arguments[0].click();", element);
 		} catch (Exception e) {
 			Log.error("Unable to click on [" + description + "]", e);
 			screenshot("Failure");
@@ -701,7 +679,7 @@ public class BasePage extends WebDriverFactory {
 			Log.info("Saving the PDF file from the Webpage [" + description + "] ");
 			robot = new Robot();
 			Thread.sleep(10000);
-			((JavascriptExecutor) getWebDriver()).executeScript("window.focus();");
+			((JavascriptExecutor) getWebDriver()).executeScript("window.focus();"); 
 			maximize();
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_SHIFT);
@@ -751,6 +729,7 @@ public class BasePage extends WebDriverFactory {
 		return;
 	}
 
+	
 	/**
 	 * Instances of classes that implement this interface are used to filter
 	 * filenames. These instances are used to filter directory listings in the
@@ -811,12 +790,12 @@ public class BasePage extends WebDriverFactory {
 
 	}
 
-	/*
-	 * Commented code for PDF read (direct code) public String readDataFromPdf() {
-	 * try { switchToWindow("PDF"); savePDFfromWebPage("PDF",
-	 * System.getProperty("user.dir") + "\\src\\test\\resources\\download.pdf");
-	 * getWebDriver().close(); switchToWindow(""); PDDocument document = PDDocument
-	 * .load(new File(System.getProperty("user.dir") +
+	/* Commented code for PDF read (direct code)
+	 * public String readDataFromPdf() { try { switchToWindow("PDF");
+	 * savePDFfromWebPage("PDF", System.getProperty("user.dir") +
+	 * "\\src\\test\\resources\\download.pdf"); getWebDriver().close();
+	 * switchToWindow(""); PDDocument document = PDDocument .load(new
+	 * File(System.getProperty("user.dir") +
 	 * "\\src\\test\\resources\\download.pdf")); PDFTextStripper pdfStripper = new
 	 * PDFTextStripper(); String data = pdfStripper.getText(document);
 	 * document.close();

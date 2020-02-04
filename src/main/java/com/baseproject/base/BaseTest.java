@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.InetAddress;
+import java.security.InvalidParameterException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
@@ -31,7 +32,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
@@ -39,6 +39,8 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.baseproject.utility.Log;
 import com.baseproject.webdriver.WebDriverFactory;
+
+
 
 /**
  * The class BaseTest contains Test utilities and extends WebDriverFactory
@@ -101,9 +103,7 @@ public class BaseTest extends WebDriverFactory {
 				intiDriver();
 
 				report.setSystemInfo("OS Name :", System.getProperty("os.name"));
-				// report.setSystemInfo("Browser Name :",
-				// ieOptions.getBrowserName().toUpperCase());
-				report.setSystemInfo("Browser Name :", options.getBrowserName().toUpperCase());
+				report.setSystemInfo("Browser Name :", ieOptions.getBrowserName().toUpperCase());
 				report.setSystemInfo("User Name :", System.getProperty("user.name"));
 				report.setSystemInfo("Java Version :", System.getProperty("java.version"));
 				report.setSystemInfo("Machine Name :", InetAddress.getLocalHost().getHostName());
@@ -241,8 +241,7 @@ public class BaseTest extends WebDriverFactory {
 
 	protected static synchronized String getURL(String propertyValue) {
 		try {
-			return System.getProperty("env") == null ? getPropertyValue(propertyValue)
-					: getPropertyValue(System.getProperty("env"));
+			return System.getProperty("env") == null ? getPropertyValue(propertyValue) : getPropertyValue(System.getProperty("env"));
 		} catch (Exception e) {
 			log.error("URL needs to be passed as a paramter - system.getProperty or config.getProperty");
 			throw e;
@@ -423,3 +422,4 @@ public class BaseTest extends WebDriverFactory {
 	}
 
 }
+
