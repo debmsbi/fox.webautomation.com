@@ -103,7 +103,7 @@ public class BaseTest extends WebDriverFactory {
 				intiDriver();
 
 				report.setSystemInfo("OS Name :", System.getProperty("os.name"));
-				report.setSystemInfo("Browser Name :", ieOptions.getBrowserName().toUpperCase());
+				//report.setSystemInfo("Browser Name :", ieOptions.getBrowserName().toUpperCase());
 				report.setSystemInfo("User Name :", System.getProperty("user.name"));
 				report.setSystemInfo("Java Version :", System.getProperty("java.version"));
 				report.setSystemInfo("Machine Name :", InetAddress.getLocalHost().getHostName());
