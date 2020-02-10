@@ -14,13 +14,14 @@
 
 package projects.fox.api.tests;
 
+import static org.hamcrest.Matchers.*;
 import static io.restassured.RestAssured.given;
-
 import java.net.URISyntaxException;
-
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
 
 public class getrequest {
 
@@ -29,8 +30,33 @@ public class getrequest {
 
 		RestAssured.baseURI = "http://dedmsapi.centralus.cloudapp.azure.com:8084";
 
-		given().param("CountryCode", "95,99").param("Year", "2012,2011,2013,2014,2015,2016,2017,2018,2019").when()
-				.get("/country-codes").then().assertThat().statusCode(200);
+		//Given block
+		Response res=given().
+		param("CountryCode", "95,99").
+		param("Year", "2012,2011,2013,2014,2015,2016,2017,2018,2019").
+		
+		//When block
+		when()
+				.get("/country-codes").
+				
+		//Then block
+				then().assertThat().
+				statusCode(200).
+				and().contentType(ContentType.JSON).
+				and().
+				body("resultSet1[0].CountryName",equalTo("India")).
+				
+		//Extract block		
+				extract().response();
+		
+		//Converting the raw data of response to string and then print the response
+		String responsestring=res.asString();
+		System.out.println(responsestring);
+		
+		
+				
+		
+		
 
 	}
 
