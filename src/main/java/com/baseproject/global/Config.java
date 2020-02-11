@@ -1,5 +1,5 @@
 /**
-* This com.mmc.global package has a 'Config' class for global variables and configuration functions  
+* This com.baseproject.global package has a 'Config' class for global variables and configuration functions  
  * @since 1.0
 * @author 10647421
 */
@@ -7,7 +7,6 @@ package com.baseproject.global;
 
 import static org.openqa.selenium.ie.InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS;
 
-import java.awt.FileDialog;
 import java.awt.Robot;
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,9 +19,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Hashtable;
 import java.util.Properties;
-
-import javax.swing.JFileChooser;
-import javax.swing.JFrame;
 
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
@@ -37,16 +33,15 @@ import org.openqa.selenium.ie.InternetExplorerOptions;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.openxmlformats.schemas.spreadsheetml.x2006.main.STSourceType;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.baseproject.utility.Log;
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
-import com.baseproject.utility.Log;
 
 /**
  * @author 10647421 The Config class contains <br>
