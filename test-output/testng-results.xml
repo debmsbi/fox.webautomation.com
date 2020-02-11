@@ -113,20 +113,20 @@
       <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-02-11T00:42:09 IST" name="Suite" finished-at="2020-02-11T00:42:53 IST" duration-ms="44678">
+  <suite started-at="2020-02-12T02:25:52 IST" name="Suite" finished-at="2020-02-12T02:26:29 IST" duration-ms="36723">
     <groups>
     </groups>
-    <test started-at="2020-02-11T00:42:09 IST" name="Test" finished-at="2020-02-11T00:42:53 IST" duration-ms="44678">
+    <test started-at="2020-02-12T02:25:52 IST" name="Test" finished-at="2020-02-12T02:26:29 IST" duration-ms="36723">
       <class name="projects.fox.tests.foxtest">
-        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@703580bf]" started-at="2020-02-11T00:42:08 IST" name="preinit" finished-at="2020-02-11T00:42:09 IST" duration-ms="306" status="PASS">
+        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:25:52 IST" name="preinit" finished-at="2020-02-12T02:25:52 IST" duration-ms="160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preinit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@703580bf]" started-at="2020-02-11T00:42:09 IST" name="init" finished-at="2020-02-11T00:42:16 IST" duration-ms="6998" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:25:52 IST" name="init" finished-at="2020-02-12T02:25:56 IST" duration-ms="3775" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5f7989fa]]>
+                <![CDATA[org.testng.TestRunner@7343922c]]>
               </value>
             </param>
           </params>
@@ -136,7 +136,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="test()[pri:0, instance:projects.fox.tests.foxtest@703580bf]" started-at="2020-02-11T00:42:16 IST" name="test" finished-at="2020-02-11T00:42:36 IST" duration-ms="20043" status="PASS">
+        <test-method is-config="true" signature="test()[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:25:56 IST" name="test" finished-at="2020-02-12T02:26:14 IST" duration-ms="18052" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br />]]>
@@ -164,7 +164,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@703580bf]" started-at="2020-02-11T00:42:36 IST" name="extent" finished-at="2020-02-11T00:42:36 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:14 IST" name="extent" finished-at="2020-02-12T02:26:14 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@703580bf]" started-at="2020-02-11T00:42:36 IST" name="test1" description="EPAY_1" data-provider="ExcelTestData" finished-at="2020-02-11T00:42:48 IST" duration-ms="12146" status="PASS">
+        <test-method signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:14 IST" name="test1" description="EPAY_1" data-provider="ExcelTestData" finished-at="2020-02-12T02:26:25 IST" duration-ms="11542" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -264,11 +264,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@703580bf]" started-at="2020-02-11T00:42:48 IST" name="getResult" finished-at="2020-02-11T00:42:48 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:25 IST" name="getResult" finished-at="2020-02-12T02:26:25 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@703580bf] output=Click on [click_Apply_button]<br />]]]>
+                <![CDATA[[TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@932bc4a] output=Click on [click_Apply_button]<br />]]]>
               </value>
             </param>
             <param index="1">
@@ -283,7 +283,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@703580bf]" started-at="2020-02-11T00:42:48 IST" name="tearDown" finished-at="2020-02-11T00:42:53 IST" duration-ms="5266" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:25 IST" name="tearDown" finished-at="2020-02-12T02:26:29 IST" duration-ms="3205" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
