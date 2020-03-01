@@ -1,3 +1,9 @@
+/**
+* This class contains generic Log utility functions
+*
+* @author 10647421
+*/
+
 package com.baseproject.utility;
 
 import org.apache.log4j.Logger;
@@ -64,5 +70,3 @@ public class Log extends Config {
 	}
 
 }
-
-

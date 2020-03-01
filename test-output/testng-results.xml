@@ -2,295 +2,349 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[-----------Test Class [foxtest] Execution Started-------------<br />]]>
+      <![CDATA[-----------Test Class [salesforce_lightening_app_Test] Execution Started-------------<br />]]>
     </line>
     <line>
-      <![CDATA[Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br />]]>
-    </line>
-    <line>
-      <![CDATA[Click on [Company]<br />]]>
-    </line>
-    <line>
-      <![CDATA[Enter text [FOXQALOTS] in the [Company] Text Box<br />]]>
+      <![CDATA[Open the URL [https://priyanshis14-dev-ed.lightning.force.com/lightning/page/home]<br />]]>
     </line>
     <line>
       <![CDATA[Click on [User Name]<br />]]>
     </line>
     <line>
-      <![CDATA[Enter text [ajoshi] in the [User Name] Text Box<br />]]>
+      <![CDATA[Enter text [priyanshis83@lti.com] in the [User Name] Text Box<br />]]>
     </line>
     <line>
       <![CDATA[Click on [Password]<br />]]>
     </line>
     <line>
-      <![CDATA[Enter text [abc12345] in the [Password] Text Box<br />]]>
+      <![CDATA[Enter text [Test@1234] in the [Password] Text Box<br />]]>
     </line>
     <line>
       <![CDATA[Click on [Submit]<br />]]>
     </line>
     <line>
-      <![CDATA[-----------Test Method [test1] Execution Started-------------<br />]]>
+      <![CDATA[-----------Test Method [salesforce_lightening_app_Test1] Execution Started-------------<br />]]>
     </line>
     <line>
-      <![CDATA[Click on [click_Apply_button]<br />]]>
+      <![CDATA[Wait for [gettext_calender_date] to become visible<br />]]>
     </line>
     <line>
-      <![CDATA[Click on [click_Apply_button]<br />]]>
+      <![CDATA[[gettext_calender_date] is visible now<br />]]>
     </line>
     <line>
-      <![CDATA[Click on [click_Apply_button]<br />]]>
+      <![CDATA[Get Text from the [gettext_calender_date]<br />]]>
     </line>
     <line>
-      <![CDATA[Enter text [02/05/2020 - 02/05/2020] in the [entertext_PTORequest_Dates] Text Box<br />]]>
+      <![CDATA[[assertEquals]: February 2020<br />]]>
     </line>
     <line>
-      <![CDATA[Click on [click_Apply_button]<br />]]>
+      <![CDATA[[assertEquals]: Expected [February 2020] Actual [February 2020]<br />]]>
     </line>
     <line>
-      <![CDATA[Click on [click_dropdown_ptorequesttype]<br />]]>
+      <![CDATA[Click on [ click_3more_calender]<br />]]>
     </line>
     <line>
-      <![CDATA[Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br />]]>
+      <![CDATA[Get the List of Text from [getext_event_feb122020_outlookcalender]<br />]]>
     </line>
     <line>
-      <![CDATA[Click on [click_dropdown_ptorequesttype_sick]<br />]]>
+      <![CDATA[[assertEquals]: Conference<br />]]>
     </line>
     <line>
-      <![CDATA[Enter text [8] in the [entertext_Totalhours] Text Box<br />]]>
+      <![CDATA[[assertEquals]: Expected [Conference] Actual [Conference]<br />]]>
     </line>
     <line>
-      <![CDATA[Click on [click_submit_button]<br />]]>
+      <![CDATA[[assertEquals]: 10:30a<br />]]>
     </line>
     <line>
-      <![CDATA[Get the List of Text from [List_ptohistort_records]<br />]]>
+      <![CDATA[[assertEquals]: Expected [10:30a] Actual [10:30a]<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: verify Location<br />]]>
+      <![CDATA[[assertEquals]: Meeting<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [9608.70 - Police Department - Studio: Guards-001] Actual [9608.70 - Police Department - Studio: Guards-001]<br />]]>
+      <![CDATA[[assertEquals]: Expected [Meeting] Actual [Meeting]<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: verify Start Date<br />]]>
+      <![CDATA[[assertEquals]: 12p<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [02/05/2020] Actual [02/05/2020]<br />]]>
+      <![CDATA[[assertEquals]: Expected [12p] Actual [12p]<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: verify End Date<br />]]>
+      <![CDATA[[assertEquals]: Lunch<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [02/05/2020] Actual [02/05/2020]<br />]]>
+      <![CDATA[[assertEquals]: Expected [Lunch] Actual [Lunch]<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: verify Hours<br />]]>
+      <![CDATA[[assertEquals]: 2:30p<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [8] Actual [8]<br />]]>
+      <![CDATA[[assertEquals]: Expected [2:30p] Actual [2:30p]<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: verify Days<br />]]>
+      <![CDATA[[assertEquals]: Meeting<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [1] Actual [1]<br />]]>
+      <![CDATA[[assertEquals]: Expected [Meeting] Actual [Meeting]<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: verify Type<br />]]>
+      <![CDATA[[assertEquals]: 5:30p<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [Sick] Actual [Sick]<br />]]>
+      <![CDATA[[assertEquals]: Expected [5:30p] Actual [5:30p]<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Verify Status<br />]]>
+      <![CDATA[[assertEquals]: Happy Hour<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [Awaiting Approval] Actual [Awaiting Approval]<br />]]>
+      <![CDATA[[assertEquals]: Expected [Happy Hour] Actual [Happy Hour]<br />]]>
     </line>
     <line>
-      <![CDATA[-----------Test Method [test1] Execution Complete-------------<br />]]>
+      <![CDATA[[assertEquals]: 8p<br />]]>
     </line>
     <line>
-      <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
+      <![CDATA[[assertEquals]: Expected [8p] Actual [8p]<br />]]>
+    </line>
+    <line>
+      <![CDATA[[assertEquals]: Dinner<br />]]>
+    </line>
+    <line>
+      <![CDATA[[assertEquals]: Expected [Dinner] Actual [Dinner]<br />]]>
+    </line>
+    <line>
+      <![CDATA[Wait for [ click_Accounts] to become visible<br />]]>
+    </line>
+    <line>
+      <![CDATA[[ click_Accounts] is visible now<br />]]>
+    </line>
+    <line>
+      <![CDATA[Get the List of Text from [getext_recentlyviewed_Accountstab]<br />]]>
+    </line>
+    <line>
+      <![CDATA[[assertEquals]: GenePoint<br />]]>
+    </line>
+    <line>
+      <![CDATA[[assertEquals]: Expected [GenePoint] Actual [GenePoint]<br />]]>
+    </line>
+    <line>
+      <![CDATA[[assertEquals]: Silicon<br />]]>
+    </line>
+    <line>
+      <![CDATA[[assertEquals]: Expected [Silicon] Actual [Silicon]<br />]]>
+    </line>
+    <line>
+      <![CDATA[-----------Test Method [salesforce_lightening_app_Test1] Execution Complete-------------<br />]]>
+    </line>
+    <line>
+      <![CDATA[-----------Test Class [salesforce_lightening_app_Test] Execution Completed-----------<br />]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-02-12T02:25:52 IST" name="Suite" finished-at="2020-02-12T02:26:29 IST" duration-ms="36723">
+  <suite started-at="2020-03-02T00:06:56 IST" name="Default suite" finished-at="2020-03-02T00:07:24 IST" duration-ms="27974">
     <groups>
     </groups>
-    <test started-at="2020-02-12T02:25:52 IST" name="Test" finished-at="2020-02-12T02:26:29 IST" duration-ms="36723">
-      <class name="projects.fox.tests.foxtest">
-        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:25:52 IST" name="preinit" finished-at="2020-02-12T02:25:52 IST" duration-ms="160" status="PASS">
+    <test started-at="2020-03-02T00:06:56 IST" name="Default test" finished-at="2020-03-02T00:07:24 IST" duration-ms="27974">
+      <class name="projects.fox.tests.salesforce_lightening_app_Test">
+        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:06:56 IST" name="preinit" finished-at="2020-03-02T00:06:56 IST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preinit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:25:52 IST" name="init" finished-at="2020-02-12T02:25:56 IST" duration-ms="3775" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:06:56 IST" name="init" finished-at="2020-03-02T00:07:00 IST" duration-ms="3805" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7343922c]]>
+                <![CDATA[org.testng.TestRunner@75120e58]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[-----------Test Class [foxtest] Execution Started-------------<br />]]>
+              <![CDATA[-----------Test Class [salesforce_lightening_app_Test] Execution Started-------------<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="test()[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:25:56 IST" name="test" finished-at="2020-02-12T02:26:14 IST" duration-ms="18052" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:00 IST" name="setup" finished-at="2020-03-02T00:07:08 IST" duration-ms="8539" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Open the URL [https://test.blueforce.com/FoxQA/Login.aspx?ReturnUrl=%2fFoxQA%2fLogin]<br />]]>
-            </line>
-            <line>
-              <![CDATA[Click on [Company]<br />]]>
-            </line>
-            <line>
-              <![CDATA[Enter text [FOXQALOTS] in the [Company] Text Box<br />]]>
+              <![CDATA[Open the URL [https://priyanshis14-dev-ed.lightning.force.com/lightning/page/home]<br />]]>
             </line>
             <line>
               <![CDATA[Click on [User Name]<br />]]>
             </line>
             <line>
-              <![CDATA[Enter text [ajoshi] in the [User Name] Text Box<br />]]>
+              <![CDATA[Enter text [priyanshis83@lti.com] in the [User Name] Text Box<br />]]>
             </line>
             <line>
               <![CDATA[Click on [Password]<br />]]>
             </line>
             <line>
-              <![CDATA[Enter text [abc12345] in the [Password] Text Box<br />]]>
+              <![CDATA[Enter text [Test@1234] in the [Password] Text Box<br />]]>
             </line>
             <line>
               <![CDATA[Click on [Submit]<br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:14 IST" name="extent" finished-at="2020-02-12T02:26:14 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:08 IST" name="extent" finished-at="2020-03-02T00:07:08 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void projects.fox.tests.foxtest.test1(java.util.Hashtable) throws java.lang.InterruptedException]]>
+                <![CDATA[public void projects.fox.tests.salesforce_lightening_app_Test.salesforce_lightening_app_Test1(java.util.Hashtable) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[-----------Test Method [test1] Execution Started-------------<br />]]>
+              <![CDATA[-----------Test Method [salesforce_lightening_app_Test1] Execution Started-------------<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method signature="test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:14 IST" name="test1" description="EPAY_1" data-provider="ExcelTestData" finished-at="2020-02-12T02:26:25 IST" duration-ms="11542" status="PASS">
+        <test-method signature="salesforce_lightening_app_Test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:08 IST" name="salesforce_lightening_app_Test1" description="salesforce_lightening_app_Test" data-provider="ExcelTestData" finished-at="2020-03-02T00:07:21 IST" duration-ms="12233" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{TestData8=1, TestData7=8, TestData6=02/05/2020, TestData5=02/05/2020, TestData4=9608.70 - Police Department - Studio: Guards-001, TestData3=8, TestData2=Sick, TestName=test1, TestData1=02/05/2020 - 02/05/2020, TestData10=Awaiting Approval, TestData9=Sick}]]>
+                <![CDATA[{TestData1=February 2020, TestName=salesforce_lightening_app_Test1}]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Click on [click_Apply_button]<br />]]>
+              <![CDATA[Wait for [gettext_calender_date] to become visible<br />]]>
             </line>
             <line>
-              <![CDATA[Click on [click_Apply_button]<br />]]>
+              <![CDATA[[gettext_calender_date] is visible now<br />]]>
             </line>
             <line>
-              <![CDATA[Click on [click_Apply_button]<br />]]>
+              <![CDATA[Get Text from the [gettext_calender_date]<br />]]>
             </line>
             <line>
-              <![CDATA[Enter text [02/05/2020 - 02/05/2020] in the [entertext_PTORequest_Dates] Text Box<br />]]>
+              <![CDATA[[assertEquals]: February 2020<br />]]>
             </line>
             <line>
-              <![CDATA[Click on [click_Apply_button]<br />]]>
+              <![CDATA[[assertEquals]: Expected [February 2020] Actual [February 2020]<br />]]>
             </line>
             <line>
-              <![CDATA[Click on [click_dropdown_ptorequesttype]<br />]]>
+              <![CDATA[Click on [ click_3more_calender]<br />]]>
             </line>
             <line>
-              <![CDATA[Enter text [Sick] in the [entertext_ptorequesttype] Text Box<br />]]>
+              <![CDATA[Get the List of Text from [getext_event_feb122020_outlookcalender]<br />]]>
             </line>
             <line>
-              <![CDATA[Click on [click_dropdown_ptorequesttype_sick]<br />]]>
+              <![CDATA[[assertEquals]: Conference<br />]]>
             </line>
             <line>
-              <![CDATA[Enter text [8] in the [entertext_Totalhours] Text Box<br />]]>
+              <![CDATA[[assertEquals]: Expected [Conference] Actual [Conference]<br />]]>
             </line>
             <line>
-              <![CDATA[Click on [click_submit_button]<br />]]>
+              <![CDATA[[assertEquals]: 10:30a<br />]]>
             </line>
             <line>
-              <![CDATA[Get the List of Text from [List_ptohistort_records]<br />]]>
+              <![CDATA[[assertEquals]: Expected [10:30a] Actual [10:30a]<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: verify Location<br />]]>
+              <![CDATA[[assertEquals]: Meeting<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [9608.70 - Police Department - Studio: Guards-001] Actual [9608.70 - Police Department - Studio: Guards-001]<br />]]>
+              <![CDATA[[assertEquals]: Expected [Meeting] Actual [Meeting]<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: verify Start Date<br />]]>
+              <![CDATA[[assertEquals]: 12p<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [02/05/2020] Actual [02/05/2020]<br />]]>
+              <![CDATA[[assertEquals]: Expected [12p] Actual [12p]<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: verify End Date<br />]]>
+              <![CDATA[[assertEquals]: Lunch<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [02/05/2020] Actual [02/05/2020]<br />]]>
+              <![CDATA[[assertEquals]: Expected [Lunch] Actual [Lunch]<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: verify Hours<br />]]>
+              <![CDATA[[assertEquals]: 2:30p<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [8] Actual [8]<br />]]>
+              <![CDATA[[assertEquals]: Expected [2:30p] Actual [2:30p]<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: verify Days<br />]]>
+              <![CDATA[[assertEquals]: Meeting<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [1] Actual [1]<br />]]>
+              <![CDATA[[assertEquals]: Expected [Meeting] Actual [Meeting]<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: verify Type<br />]]>
+              <![CDATA[[assertEquals]: 5:30p<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [Sick] Actual [Sick]<br />]]>
+              <![CDATA[[assertEquals]: Expected [5:30p] Actual [5:30p]<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Verify Status<br />]]>
+              <![CDATA[[assertEquals]: Happy Hour<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [Awaiting Approval] Actual [Awaiting Approval]<br />]]>
+              <![CDATA[[assertEquals]: Expected [Happy Hour] Actual [Happy Hour]<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: 8p<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Expected [8p] Actual [8p]<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Dinner<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Expected [Dinner] Actual [Dinner]<br />]]>
+            </line>
+            <line>
+              <![CDATA[Wait for [ click_Accounts] to become visible<br />]]>
+            </line>
+            <line>
+              <![CDATA[[ click_Accounts] is visible now<br />]]>
+            </line>
+            <line>
+              <![CDATA[Get the List of Text from [getext_recentlyviewed_Accountstab]<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: GenePoint<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Expected [GenePoint] Actual [GenePoint]<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Silicon<br />]]>
+            </line>
+            <line>
+              <![CDATA[[assertEquals]: Expected [Silicon] Actual [Silicon]<br />]]>
             </line>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:25 IST" name="getResult" finished-at="2020-02-12T02:26:25 IST" duration-ms="10" status="PASS">
+        </test-method> <!-- salesforce_lightening_app_Test1 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:21 IST" name="getResult" finished-at="2020-03-02T00:07:21 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=test1 status=SUCCESS method=foxtest.test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.foxtest@932bc4a] output=Click on [click_Apply_button]<br />]]]>
+                <![CDATA[[TestResult name=salesforce_lightening_app_Test1 status=SUCCESS method=salesforce_lightening_app_Test.salesforce_lightening_app_Test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d] output=Wait for [gettext_calender_date] to become visible<br />]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void projects.fox.tests.foxtest.test1(java.util.Hashtable) throws java.lang.InterruptedException]]>
+                <![CDATA[public void projects.fox.tests.salesforce_lightening_app_Test.salesforce_lightening_app_Test1(java.util.Hashtable) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[-----------Test Method [test1] Execution Complete-------------<br />]]>
+              <![CDATA[-----------Test Method [salesforce_lightening_app_Test1] Execution Complete-------------<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.foxtest@932bc4a]" started-at="2020-02-12T02:26:25 IST" name="tearDown" finished-at="2020-02-12T02:26:29 IST" duration-ms="3205" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:21 IST" name="tearDown" finished-at="2020-03-02T00:07:24 IST" duration-ms="3272" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[-----------Test Class [foxtest] Execution Completed-----------<br />]]>
+              <![CDATA[-----------Test Class [salesforce_lightening_app_Test] Execution Completed-----------<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- projects.fox.tests.foxtest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- projects.fox.tests.salesforce_lightening_app_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

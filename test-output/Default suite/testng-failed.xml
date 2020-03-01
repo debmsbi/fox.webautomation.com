@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="projects.fox.api.tests.getrequest">
+      <class name="projects.fox.tests.salesforce_lightening_app_Test">
         <methods>
-          <include name="test1"/>
+          <include name="salesforce_lightening_app_Test1" invocation-numbers="0"/>
+          <include name="getResult"/>
+          <include name="preinit"/>
+          <include name="init"/>
+          <include name="tearDown"/>
+          <include name="extent"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- projects.fox.api.tests.getrequest -->
+      </class> <!-- projects.fox.tests.salesforce_lightening_app_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

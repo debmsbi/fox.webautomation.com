@@ -43,6 +43,7 @@ public class foxtest extends BaseTest {
       public void test1(Hashtable<String, String> mainTabs) throws InterruptedException {
             
     	  foxPage=new foxPage();
+    	  foxPage.action();
     	  foxPage.click_Mypto_link();
     	  foxPage.click_PTORequest_Tab();
     	  foxPage.click_AddPTORequest_button ();

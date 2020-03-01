@@ -143,6 +143,7 @@ public class Config {
 		options.addArguments("--disable-default-apps");
 		options.addArguments("--disable-gpu");
 		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--disable-notifications");
 		options.setHeadless(useHeadlessMode);
 		System.setProperty("webdriver.chrome.driver", CHROME_EXE_PATH + "chromedriver.exe");
 		return options;
