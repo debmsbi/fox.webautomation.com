@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.openqa.selenium.JavascriptExecutor;
@@ -32,6 +33,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
+
 import com.baseproject.webdriver.WebDriverFactory;
 
 /**
@@ -61,6 +63,32 @@ public class BasePage extends WebDriverFactory {
 			screenshot("Failure");
 		}
 
+	}
+
+	/**
+	 * This function is to Drag and Drop
+	 * 
+	 * @param description : Description for the logger
+	 * @param click the drag WebElement : element1 as a parameter
+	 * @param drag the clicked WebElement : element1 as a parameter
+     * @param drop the clicked and drag WebElement to desired WebElement  : element1,element2 as a parameter
+	 */
+	protected static synchronized void DragandDropelement(String description, WebElement element1,WebElement element2) {
+		try {
+			WebElement drag = element1;
+			WebElement drop = element2;
+
+			Log.info("Drag and Drop  [" + description + "] the element");
+			
+			 Actions action=new Actions(getWebDriver());
+			action.dragAndDrop(drag, drop).build().perform();
+
+		} catch (Exception e) {
+			Log.error("Unable to drag the [" + description + "] webelement", e);
+			Log.error("Unable to drop the [" + description + "] webelement", e);
+			screenshot("Failure");
+			throw e;
+		}
 	}
 
 	/**
@@ -679,7 +707,7 @@ public class BasePage extends WebDriverFactory {
 			Log.info("Saving the PDF file from the Webpage [" + description + "] ");
 			robot = new Robot();
 			Thread.sleep(10000);
-			((JavascriptExecutor) getWebDriver()).executeScript("window.focus();"); 
+			((JavascriptExecutor) getWebDriver()).executeScript("window.focus();");
 			maximize();
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_SHIFT);
@@ -729,7 +757,6 @@ public class BasePage extends WebDriverFactory {
 		return;
 	}
 
-	
 	/**
 	 * Instances of classes that implement this interface are used to filter
 	 * filenames. These instances are used to filter directory listings in the
@@ -790,12 +817,12 @@ public class BasePage extends WebDriverFactory {
 
 	}
 
-	/* Commented code for PDF read (direct code)
-	 * public String readDataFromPdf() { try { switchToWindow("PDF");
-	 * savePDFfromWebPage("PDF", System.getProperty("user.dir") +
-	 * "\\src\\test\\resources\\download.pdf"); getWebDriver().close();
-	 * switchToWindow(""); PDDocument document = PDDocument .load(new
-	 * File(System.getProperty("user.dir") +
+	/*
+	 * Commented code for PDF read (direct code) public String readDataFromPdf() {
+	 * try { switchToWindow("PDF"); savePDFfromWebPage("PDF",
+	 * System.getProperty("user.dir") + "\\src\\test\\resources\\download.pdf");
+	 * getWebDriver().close(); switchToWindow(""); PDDocument document = PDDocument
+	 * .load(new File(System.getProperty("user.dir") +
 	 * "\\src\\test\\resources\\download.pdf")); PDFTextStripper pdfStripper = new
 	 * PDFTextStripper(); String data = pdfStripper.getText(document);
 	 * document.close();

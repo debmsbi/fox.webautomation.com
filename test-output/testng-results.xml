@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[-----------Test Class [salesforce_lightening_app_Test] Execution Started-------------<br />]]>
@@ -125,13 +125,7 @@
       <![CDATA[[assertEquals]: GenePoint<br />]]>
     </line>
     <line>
-      <![CDATA[[assertEquals]: Expected [GenePoint] Actual [GenePoint]<br />]]>
-    </line>
-    <line>
-      <![CDATA[[assertEquals]: Silicon<br />]]>
-    </line>
-    <line>
-      <![CDATA[[assertEquals]: Expected [Silicon] Actual [Silicon]<br />]]>
+      <![CDATA[Assertion failed: expected [GenePoint] but found [United Oil & Gas Corp.]<br />]]>
     </line>
     <line>
       <![CDATA[-----------Test Method [salesforce_lightening_app_Test1] Execution Complete-------------<br />]]>
@@ -140,20 +134,20 @@
       <![CDATA[-----------Test Class [salesforce_lightening_app_Test] Execution Completed-----------<br />]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-03-02T00:06:56 IST" name="Default suite" finished-at="2020-03-02T00:07:24 IST" duration-ms="27974">
+  <suite started-at="2020-04-10T13:21:01 IST" name="Default suite" finished-at="2020-04-10T13:21:37 IST" duration-ms="36008">
     <groups>
     </groups>
-    <test started-at="2020-03-02T00:06:56 IST" name="Default test" finished-at="2020-03-02T00:07:24 IST" duration-ms="27974">
+    <test started-at="2020-04-10T13:21:01 IST" name="Default test" finished-at="2020-04-10T13:21:37 IST" duration-ms="36008">
       <class name="projects.fox.tests.salesforce_lightening_app_Test">
-        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:06:56 IST" name="preinit" finished-at="2020-03-02T00:06:56 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="preinit()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-04-10T13:21:00 IST" name="preinit" finished-at="2020-04-10T13:21:01 IST" duration-ms="397" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preinit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:06:56 IST" name="init" finished-at="2020-03-02T00:07:00 IST" duration-ms="3805" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-04-10T13:21:01 IST" name="init" finished-at="2020-04-10T13:21:07 IST" duration-ms="6502" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@75120e58]]>
+                <![CDATA[org.testng.TestRunner@78e17a99]]>
               </value>
             </param>
           </params>
@@ -163,7 +157,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:00 IST" name="setup" finished-at="2020-03-02T00:07:08 IST" duration-ms="8539" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-04-10T13:21:07 IST" name="setup" finished-at="2020-04-10T13:21:14 IST" duration-ms="6877" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Open the URL [https://priyanshis14-dev-ed.lightning.force.com/lightning/page/home]<br />]]>
@@ -185,7 +179,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:08 IST" name="extent" finished-at="2020-03-02T00:07:08 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="extent(java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-04-10T13:21:14 IST" name="extent" finished-at="2020-04-10T13:21:15 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,7 +193,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- extent -->
-        <test-method signature="salesforce_lightening_app_Test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:08 IST" name="salesforce_lightening_app_Test1" description="salesforce_lightening_app_Test" data-provider="ExcelTestData" finished-at="2020-03-02T00:07:21 IST" duration-ms="12233" status="PASS">
+        <test-method signature="salesforce_lightening_app_Test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-04-10T13:21:15 IST" name="salesforce_lightening_app_Test1" description="salesforce_lightening_app_Test" data-provider="ExcelTestData" finished-at="2020-04-10T13:21:33 IST" duration-ms="18185" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -207,6 +201,49 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [GenePoint] but found [United Oil & Gas Corp.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [GenePoint] but found [United Oil & Gas Corp.]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:563)
+at com.baseproject.base.BaseTest.assertEquals(BaseTest.java:261)
+at projects.fox.tests.salesforce_lightening_app_Test.salesforce_lightening_app_Test1(salesforce_lightening_app_Test.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Wait for [gettext_calender_date] to become visible<br />]]>
@@ -308,21 +345,15 @@
               <![CDATA[[assertEquals]: GenePoint<br />]]>
             </line>
             <line>
-              <![CDATA[[assertEquals]: Expected [GenePoint] Actual [GenePoint]<br />]]>
-            </line>
-            <line>
-              <![CDATA[[assertEquals]: Silicon<br />]]>
-            </line>
-            <line>
-              <![CDATA[[assertEquals]: Expected [Silicon] Actual [Silicon]<br />]]>
+              <![CDATA[Assertion failed: expected [GenePoint] but found [United Oil & Gas Corp.]<br />]]>
             </line>
           </reporter-output>
         </test-method> <!-- salesforce_lightening_app_Test1 -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:21 IST" name="getResult" finished-at="2020-03-02T00:07:21 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-04-10T13:21:33 IST" name="getResult" finished-at="2020-04-10T13:21:33 IST" duration-ms="699" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=salesforce_lightening_app_Test1 status=SUCCESS method=salesforce_lightening_app_Test.salesforce_lightening_app_Test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d] output=Wait for [gettext_calender_date] to become visible<br />]]]>
+                <![CDATA[[TestResult name=salesforce_lightening_app_Test1 status=FAILURE method=salesforce_lightening_app_Test.salesforce_lightening_app_Test1(java.util.Hashtable)[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d] output=Wait for [gettext_calender_date] to become visible<br />]]]>
               </value>
             </param>
             <param index="1">
@@ -337,7 +368,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-03-02T00:07:21 IST" name="tearDown" finished-at="2020-03-02T00:07:24 IST" duration-ms="3272" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:projects.fox.tests.salesforce_lightening_app_Test@6bedbc4d]" started-at="2020-04-10T13:21:33 IST" name="tearDown" finished-at="2020-04-10T13:21:37 IST" duration-ms="3355" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[-----------Test Class [salesforce_lightening_app_Test] Execution Completed-----------<br />]]>

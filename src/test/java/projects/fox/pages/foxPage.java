@@ -40,6 +40,13 @@ public class foxPage extends BasePage {
 	WebElement click_Add_Edit_Punches_textbox;
 	@FindBy(xpath = "//table[@class=' table-condensed']/tbody/tr[5]/td[3]")
 	WebElement click_Add_Edit_Punches_textbox_datepicker;
+	
+	@FindBy(xpath = "//*[@id='credit2']/a")
+	WebElement drag_bank;
+	
+	@FindBy(xpath = "//*[@id='bank']/li")
+	WebElement drop_bank;
+	
 
 	// Constructor
 	public foxPage() {
@@ -47,6 +54,12 @@ public class foxPage extends BasePage {
 	}
 
 	// Properties
+	
+	public void drag_drop() {
+		
+		DragandDropelement("Drag and drop", drag_bank,drop_bank);
+	}
+	
 
 	public void click_Add_Edit_Punches_textbox_datepicker() {
 
